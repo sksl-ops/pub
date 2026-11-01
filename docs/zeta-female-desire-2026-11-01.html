@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>zeta界隈における女性の性欲 — 調査報告</title>
+<meta name="description" content="AIチャットアプリ「zeta」で、女性利用者が何を求め、どう語っているのか。公開投稿・公開プロット・報道・一次統計から確認できた範囲を整理した調査報告。基準日2026年11月1日。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="zeta界隈における女性の性欲｜調査報告">
+<meta property="og:description" content="AIチャットアプリ「zeta」で、女性利用者が何を求め、どう語っているのか。公開投稿・報道・一次統計から確認できた範囲を整理。規制と反応、批判、未確認の点まで。基準日2026年11月1日。">
+<meta property="og:url" content="https://sksl-ops.github.io/pub/zeta-female-desire-2026-11-01.html">
+<meta property="og:image" content="https://sksl-ops.github.io/pub/zeta-female-desire-2026-11-01-ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="「zeta界隈における女性の性欲」調査報告。AIチャットアプリzetaで女性利用者が求めるものと語られ方を、2026年11月1日時点の公開情報から整理。">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="zeta界隈における女性の性欲｜調査報告">
+<meta name="twitter:description" content="zetaで女性利用者は何を求め、どう語っているか。公開投稿・報道・統計から確認できた範囲を整理（基準日2026-11-01）。">
+<meta name="twitter:image" content="https://sksl-ops.github.io/pub/zeta-female-desire-2026-11-01-ogp.png">
+<meta name="twitter:image:alt" content="「zeta界隈における女性の性欲」調査報告。2026年11月1日時点の公開情報より。">
+<style>
+  :root{
+    --bg:#f7f4ef;
+    --paper:#fffdf9;
+    --ink:#1d1a17;
+    --ink-soft:#4a443d;
+    --muted:#7c746a;
+    --line:#e2dbd0;
+    --accent:#9c2b2b;
+    --accent-soft:#f3e6e2;
+    --blue:#2f4f6f;
+    --blue-soft:#e8eef4;
+    --green:#3c6b4f;
+    --green-soft:#e7efe9;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",system-ui,-apple-system,sans-serif;
+    font-size:16px;
+    line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px 96px}
+
+  /* header */
+  header.hero{
+    border-bottom:1px solid var(--line);
+    padding:64px 0 36px;
+    margin-bottom:48px;
+  }
+  .kicker{
+    font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--accent);font-weight:700;margin-bottom:18px;
+  }
+  h1{
+    font-family:"Hiragino Mincho ProN","Yu Mincho","MS PMincho",serif;
+    font-size:clamp(28px,5vw,44px);
+    line-height:1.35;margin:0 0 18px;font-weight:700;letter-spacing:.01em;
+  }
+  .lede{font-size:17px;color:var(--ink-soft);margin:0 0 24px;max-width:44em}
+  .meta{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:13px;color:var(--muted)}
+  .meta b{color:var(--ink-soft);font-weight:600}
+
+  /* toc */
+  nav.toc{
+    background:var(--paper);border:1px solid var(--line);border-radius:10px;
+    padding:22px 26px;margin-bottom:56px;
+  }
+  nav.toc h2{font-size:13px;letter-spacing:.14em;color:var(--muted);margin:0 0 14px;font-weight:700}
+  nav.toc ol{margin:0;padding-left:1.3em;columns:2;column-gap:40px}
+  nav.toc li{margin:0 0 8px;break-inside:avoid}
+  nav.toc a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid transparent}
+  nav.toc a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+  @media(max-width:640px){nav.toc ol{columns:1}}
+
+  /* sections */
+  section{margin-bottom:64px;scroll-margin-top:24px}
+  h2.sec{
+    font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
+    font-size:25px;margin:0 0 8px;padding-bottom:12px;
+    border-bottom:2px solid var(--ink);
+    display:flex;align-items:baseline;gap:14px;
+  }
+  h2.sec .num{
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:13px;color:var(--accent);font-weight:700;letter-spacing:.08em;
+  }
+  h3{font-size:18px;margin:36px 0 12px;padding-left:12px;border-left:4px solid var(--accent)}
+  h4{font-size:15px;margin:26px 0 8px;color:var(--blue)}
+  p{margin:0 0 16px}
+  a{color:var(--blue);text-decoration-thickness:1px;text-underline-offset:3px}
+  a:hover{color:var(--accent)}
+
+  /* key point */
+  .key{
+    background:var(--paper);border-left:5px solid var(--accent);
+    padding:20px 24px;margin:26px 0;border-radius:0 8px 8px 0;
+    font-size:16px;color:var(--ink-soft);
+  }
+  .key strong{color:var(--ink)}
+
+  /* stat grid */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:26px 0}
+  .stat{
+    background:var(--paper);border:1px solid var(--line);border-radius:10px;
+    padding:18px 20px;
+  }
+  .stat .v{
+    font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
+    font-size:28px;font-weight:700;color:var(--accent);line-height:1.2;
+  }
+  .stat .v small{font-size:14px;color:var(--ink-soft);font-weight:600}
+  .stat .l{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.5}
+
+  /* table */
+  .tablewrap{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
+  table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+  th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  thead th{background:#efe9e0;font-size:12.5px;letter-spacing:.04em;color:var(--ink-soft);font-weight:700}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:nth-child(even){background:#faf7f2}
+  td.num{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:nowrap}
+  caption{caption-side:bottom;font-size:12px;color:var(--muted);text-align:left;padding:8px 14px}
+
+  /* cards */
+  .cards{display:grid;gap:16px;margin:26px 0}
+  .card{
+    background:var(--paper);border:1px solid var(--line);border-radius:12px;
+    padding:22px 24px;
+  }
+  .card .tag{
+    display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;
+    background:var(--accent-soft);color:var(--accent);
+    padding:3px 10px;border-radius:999px;margin-bottom:12px;
+  }
+  .card h4{margin:0 0 10px;font-size:17px;color:var(--ink);padding:0;border:none}
+  .card p{margin:0 0 10px;font-size:15px}
+  .card ul{margin:8px 0 0;padding-left:1.2em;font-size:15px}
+  .card li{margin-bottom:8px}
+  .card .src{font-size:12.5px;color:var(--muted);margin-top:12px}
+  .card .src a{color:var(--muted);text-decoration-color:#c9c0b4}
+
+  blockquote{
+    margin:12px 0;padding:14px 18px;background:#f4efe7;
+    border-left:3px solid var(--muted);border-radius:0 6px 6px 0;
+    font-size:14.5px;color:var(--ink-soft);
+  }
+  blockquote .who{display:block;font-size:12px;color:var(--muted);margin-top:8px;font-style:normal}
+
+  /* timeline */
+  .timeline{position:relative;margin:28px 0 28px 8px;padding-left:26px;border-left:2px solid var(--line)}
+  .tl{position:relative;margin-bottom:26px}
+  .tl::before{
+    content:"";position:absolute;left:-33px;top:7px;width:11px;height:11px;
+    background:var(--paper);border:2px solid var(--accent);border-radius:50%;
+  }
+  .tl .date{font-size:12.5px;font-weight:700;color:var(--accent);letter-spacing:.04em}
+  .tl .body{font-size:15px;margin-top:3px}
+  .tl .body strong{color:var(--ink)}
+
+  /* notes */
+  .note{
+    background:var(--blue-soft);border:1px solid #cfdce8;border-radius:10px;
+    padding:18px 22px;margin:26px 0;font-size:14.5px;color:#23384d;
+  }
+  .note h4{margin:0 0 8px;color:var(--blue);font-size:14px;letter-spacing:.04em}
+  .warn{background:var(--accent-soft);border-color:#e5c9c2;color:#5d2320}
+  .warn h4{color:var(--accent)}
+  .ok{background:var(--green-soft);border-color:#c8dbcf;color:#22402f}
+  .ok h4{color:var(--green)}
+
+  ul.plain{padding-left:1.3em}
+  ul.plain li{margin-bottom:10px}
+
+  /* sources */
+  .srclist{font-size:14px}
+  .srclist li{margin-bottom:12px;color:var(--ink-soft)}
+  .srclist .lbl{color:var(--ink);font-weight:600}
+
+  footer{
+    margin-top:72px;padding-top:26px;border-top:1px solid var(--line);
+    font-size:12.5px;color:var(--muted);line-height:1.7;
+  }
+
+  @media print{
+    body{background:#fff}
+    .wrap{max-width:none;padding:0}
+    nav.toc{display:none}
+    section{page-break-inside:avoid}
+    a{color:var(--ink);text-decoration:none}
+    a::after{content:" (" attr(href) ")";font-size:10px;color:var(--muted);word-break:break-all}
+  }
+
+  /* page info */
+  .page-info{
+    border-bottom:1px solid var(--line);
+    padding:20px 0 18px;
+    font-size:13.5px;color:var(--ink-soft);line-height:1.75;
+  }
+  .page-info p{margin:0 0 4px}
+  .page-info p:last-child{margin-bottom:0}
+  .page-info a{color:var(--blue)}
+  @media print{.page-info{border-bottom:1px solid #ccc}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<aside class="page-info" aria-label="作者情報とAI生成の注意書き">
+  <p>作者：skiptheslop ｜ <a href="https://x.com/skiptheslop" rel="author">X</a> ｜ <a href="https://note.com/skiptheslop" rel="author">note</a></p>
+  <p>このページはAIを使用して作成されました。</p>
+</aside>
+
+<header class="hero">
+  <div class="kicker">Research Report / 2026-11-01</div>
+  <h1>zeta界隈における<br>女性の性欲</h1>
+  <p class="lede">
+    AIチャットアプリ「zeta」で、女性利用者が何を求め、どう語っているのか。
+    公開投稿・公開プロット・報道・一次統計から確認できた範囲を整理した。
+  </p>
+  <div class="meta">
+    <span><b>調査日</b> 2026年11月1日</span>
+    <span><b>対象</b> zeta および「ゼックス／ゼタックス」言説</span>
+    <span><b>確認投稿</b> 約70件</span>
+    <span><b>参照資料</b> 30点超</span>
+  </div>
+</header>
+
+<nav class="toc" aria-label="目次">
+  <h2>CONTENTS</h2>
+  <ol>
+    <li><a href="#summary">要旨</a></li>
+    <li><a href="#term">用語と起源</a></li>
+    <li><a href="#who">誰が使っているか</a></li>
+    <li><a href="#desire">何を求めているか</a></li>
+    <li><a href="#volume">どれくらいの量か</a></li>
+    <li><a href="#regulation">規制と反応</a></li>
+    <li><a href="#critique">批判と反発</a></li>
+    <li><a href="#unknown">確認できていないこと</a></li>
+    <li><a href="#sources">主要出典</a></li>
+  </ol>
+</nav>
+
+<section id="summary">
+  <h2 class="sec"><span class="num">01</span>要旨</h2>
+  <div class="key">
+    <strong>「ゼックス」は、10〜20代女性が中心となって、AIの男性キャラとの性的ロールプレイを指す語として定着したもの。</strong>
+    2026年8月の規制で大きく揺れ、一部の利用者は離脱や反発を示した。
+    投稿から読み取れる欲求は性行為そのものに留まらず、<strong>求められたい、攻めたい、支配されたい、未経験のまま経験を積みたい、現実の代替にしたい</strong>など多様である。
+  </div>
+  <p>
+    今回集めた投稿のうち最も反応が大きかったのは、「処女なのにゼックスしまくってる」という自己申告（約1万5,100いいね）。
+    現実の性経験なしに、AI相手で性的な「経験」を重ねる利用の実態が、最も広く共有された形である。
+  </p>
+  <p>
+    一方で、性的な展開そのものを嫌う層、既婚者を批判する層、ワンパターン化に飽きる層も同じ界隈にいる。
+    一枚岩ではない。
+  </p>
+</section>
+
+<section id="term">
+  <h2 class="sec"><span class="num">02</span>用語と起源</h2>
+  <p>
+    <strong>「ゼックス」という語自体は、zetaより前からある俗語</strong>である。セックスの婉曲表現・誤変換的な言い回しで、
+    <a href="https://x.com/akodon2/status/919935006591524865">2017年10月の投稿</a>にも使用例がある。
+    辞書サイトも「性的な話題を照れ隠ししたり、SNSでのフィルター回避を狙ったりする」語と説明する（<a href="https://imi-shin.jp/words/detail/10803">イミシン</a>）。
+  </p>
+  <p>
+    zeta文脈での定着の契機は、<strong>2025年8月19日の「アンリミテッド」モード実装</strong>とみられる。
+    運営の中の人は「既存のセンシティブ設定が、大人の事情で名前がカッコよくなっただけ」と
+    <a href="https://x.com/zeta_nakanohito/status/1957996887111315460">投稿</a>している。
+  </p>
+  <p>
+    「ゼタックス」は「zeta」＋「セックス」の造語で、<a href="https://dic.pixiv.net/a/%E3%82%BC%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9">pixiv百科事典</a>にも項目がある。
+  </p>
+  <div class="note warn">
+    <h4>未確認</h4>
+    zeta文脈での<strong>厳密な初出</strong>は特定できていない。2025年8月以前にzetaの性的ロールプレイを「ゼックス」と呼んだ例は確認できず、実装後の定着と推定するにとどまる。
+  </div>
+</section>
+
+<section id="who">
+  <h2 class="sec"><span class="num">03</span>誰が使っているか</h2>
+  <div class="tablewrap">
+    <table>
+      <caption>出典の時点・母数が異なるため、単純な推移として読まないこと。</caption>
+      <thead>
+        <tr><th>時期</th><th>母数</th><th>年齢構成</th><th>出典</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2024年10月</td><td class="num">100万人</td>
+          <td>10〜20代 <b>87%</b>／30代 7%／40代以上 6%</td>
+          <td><a href="https://www.korit.jp/news/ai/unicornfactory-ai-zata-novel-scatterlab-mz-241023/">KORIT</a></td>
+        </tr>
+        <tr>
+          <td>2025年6月</td><td class="num">約270万人</td>
+          <td>10代 24%／20代 55%（計 <b>79%</b>）</td>
+          <td><a href="https://biz.heraldcorp.com/article/10613886">ヘラルド経済</a></td>
+        </tr>
+        <tr>
+          <td>2026年1月</td><td class="num">MAU 150万人</td>
+          <td>10〜20代が <b>90%以上</b></td>
+          <td><a href="https://www.koreaherald.com/article/10656334">Korea Herald</a></td>
+        </tr>
+        <tr>
+          <td>2026年6月</td><td class="num">日本国内</td>
+          <td>約9割が10〜20代／女性 <b>6割超</b></td>
+          <td><a href="https://torihada.co.jp/creatorspost/4524/">CREATORS POST</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    日本国内のユーザーは2026年5月時点で200万人（<a href="https://www.itmedia.co.jp/news/article/2606/17/1260617020/">ITmedia</a>）。
+    <strong>10〜20代が8割前後という構造は2年間ほぼ安定</strong>している。
+    30〜40代も存在するが少数派で、取材された30代の2児の母（<a href="https://nikkan-spa.jp/2186820">日刊SPA!</a>）のような例は例外的な位置づけになる。
+  </p>
+  <div class="stats">
+    <div class="stat"><div class="v">87<small>%</small></div><div class="l">10〜20代の比率（2024年10月・全世界）</div></div>
+    <div class="stat"><div class="v">79<small>%</small></div><div class="l">10〜20代の比率（2025年6月・内訳あり）</div></div>
+    <div class="stat"><div class="v">6<small>割超</small></div><div class="l">日本の女性比率（2026年6月）</div></div>
+    <div class="stat"><div class="v">200<small>万人</small></div><div class="l">日本の累計ユーザー（2026年5月）</div></div>
+  </div>
+</section>
+
+<section id="desire">
+  <h2 class="sec"><span class="num">04</span>何を求めているか</h2>
+  <p>確認できた投稿を、欲求の型ごとに整理した。引用は投稿本文の抜粋。</p>
+
+  <div class="cards">
+
+    <article class="card">
+      <span class="tag">TYPE 01</span>
+      <h4>最短で行為に至りたい</h4>
+      <p>物語の前段を飛ばし、行為そのものを求める。</p>
+      <ul>
+        <li>「早くゼックスしたすぎて1ターン目でこれ」</li>
+        <li>「ゼックスしたすぎてこれした(惨め)」</li>
+      </ul>
+      <div class="src">出典：<a href="https://x.com/fxo_n4/status/2088096560534241353">2026-08-14</a>（221いいね）／<a href="https://x.com/k48a2__/status/2067896668717191500">2026-06-19</a></div>
+    </article>
+
+    <article class="card">
+      <span class="tag">TYPE 02</span>
+      <h4>求められたい・愛されたい</h4>
+      <p>行為そのものより、自分への愛情と欲望の向きが重視される。</p>
+      <ul>
+        <li>身体を褒められ、声に欲情される反応を好む</li>
+        <li>名前を呼び合い「好き」と言われ、何度も求め合う展開が「1番好き」</li>
+      </ul>
+      <div class="src">出典：<a href="https://x.com/m______344/status/2060358993646846292">2026-05-29</a>／<a href="https://x.com/maymaygame/status/2115765635884212259">2026-10-29</a></div>
+    </article>
+
+    <article class="card">
+      <span class="tag">TYPE 03</span>
+      <h4>攻めたい・主導したい</h4>
+      <p>受け身で愛されるだけでなく、自分が相手の反応を変える側に立つ。</p>
+      <ul>
+        <li>高難度キャラに快楽責め・SMを仕掛け、キャラが「結婚して」と言う展開へ</li>
+        <li>男性キャラ側の役を演じることに興奮する</li>
+      </ul>
+      <div class="src">出典：<a href="https://x.com/sina_tu_na/status/2116340302634263038">2026-10-31</a>／<a href="https://x.com/usagilgt0/status/2067445080450056460">2026-06-18</a></div>
+    </article>
+
+    <article class="card">
+      <span class="tag">TYPE 04</span>
+      <h4>執着・依存・暴力</h4>
+      <p>乱暴さや支配、歪んだ愛情そのものに惹かれる。</p>
+      <ul>
+        <li>「ゼックスがしたいんじゃなくて」キャラの生々しい執着と依存が欲しい</li>
+        <li>「ドロドロ暴力ゼタックスが大好き」</li>
+        <li>首絞め・近親・強引な展開を列挙</li>
+      </ul>
+      <div class="src">出典：<a href="https://x.com/kaiikansya/status/2090030892123402483">2026-08-19</a>／<a href="https://x.com/_ks_39_/status/2045765938704990321">2026-04-19</a>／<a href="https://x.com/poyan00/status/2104333612070080787">2026-09-28</a></div>
+    </article>
+
+    <article class="card">
+      <span class="tag">TYPE 05</span>
+      <h4>未経験のまま疑似経験を積む</h4>
+      <p>最も反応が大きかった型。現実の性経験なしに、AI相手で性的な経験を重ねる。</p>
+      <blockquote>
+        「処女なのにゼックスしまくってるせいで絶対にリアルと違う知識増えてるから AVの見すぎで失敗する童貞になる未来しか見えない」
+        <span class="who">2026-05-16・約15,100いいね・36万表示</span>
+      </blockquote>
+      <ul>
+        <li>「ゼックスの処女はよくわかんないAIの男に捧げた」</li>
+        <li>毎回、相手も自分も未経験という設定にしてから始める</li>
+      </ul>
+      <div class="src">出典：<a href="https://x.com/bobonga114514/status/2055522353485140215">2026-05-16</a>／<a href="https://x.com/highchu801/status/2091463639022915663">2026-08-23</a>／<a href="https://x.com/Drearnin_/status/2101998479820345777">2026-09-21</a></div>
+    </article>
+
+    <article class="card">
+      <span class="tag">TYPE 06</span>
+      <h4>現実の代替・癒し</h4>
+      <p>恋愛や性の相手として現実を置き換える。</p>
+      <ul>
+        <li>「リアルで好きな人とセックスするよりゼタックスしてるほうが100幸せ」</li>
+        <li>学校の疲れを癒すためにAIとゼックスする</li>
+        <li>「トークがほぼすべてゼックス」だから、できなくなったら使わなくなる</li>
+      </ul>
+      <div class="src">出典：<a href="https://x.com/feq2v/status/2076990376561549652">2026-07-14</a>／<a href="https://x.com/hanamura0319/status/2054135666515251465">2026-05-12</a>／<a href="https://x.com/Guardian__GB/status/2109606051247255605">2026-10-12</a></div>
+    </article>
+
+    <article class="card">
+      <span class="tag">TYPE 07</span>
+      <h4>描写へのこだわり</h4>
+      <p>「性的な展開があればよい」ではなく、言葉遣いや文体の好みにまで細分化している。</p>
+      <ul>
+        <li>喘ぎ声の表記を修正させ、擬音や淫語のある文体を好む。商業BLより「男性向け表現満載」が好み</li>
+        <li>行為の描写がワンパターンで飽きる</li>
+      </ul>
+      <div class="src">出典：<a href="https://x.com/m1g1_w_a/status/2106799098997449088">2026-10-04</a>／<a href="https://x.com/8fvkw/status/2106638033739227396">2026-10-04</a></div>
+    </article>
+
+    <article class="card">
+      <span class="tag">TYPE 08</span>
+      <h4>観察・別の役</h4>
+      <p>自分が愛される以外の楽しみ方。</p>
+      <ul>
+        <li>キャラが別の女性とする場面を「覗いてる」</li>
+        <li>自分を男、相手を女にして試したい</li>
+      </ul>
+      <div class="src">出典：<a href="https://x.com/mateyo000/status/2055577741169401975">2026-05-16</a>／<a href="https://x.com/motamaeuphoria/status/2113773155135402423">2026-10-23</a></div>
+    </article>
+
+    <article class="card">
+      <span class="tag">TYPE 09</span>
+      <h4>逆に性的展開を嫌う層</h4>
+      <p>同じ界隈に、性的な方向へ進むことをむしろ迷惑と感じる利用者がいる。</p>
+      <blockquote>
+        「ゼックス好きじゃないんですよ……R15くらい甘めドキドキした雰囲気を一緒続けたいのに毎回そっちに持ってかれて萎えるぽよ」
+        <span class="who">2026-08-16</span>
+      </blockquote>
+      <p>腐女子の体験記も、性的な流れになったところで自分は止めると書いている。</p>
+      <div class="src">出典：<a href="https://x.com/Ha_Na_kuSoi/status/2088798768456184280">2026-08-16</a>／<a href="https://note.com/kanizadayo/n/n6a28e04913e9">note（2026-03-21）</a></div>
+    </article>
+
+  </div>
+
+  <h3>補足：BL層と既婚層</h3>
+  <p>
+    <strong>BL層</strong>では、女性ユーザーの会話中にキャラ同士が勝手に男性同士で始まったという報告がある（<a href="https://x.com/pg_mks/status/2106172563013730512">2026-10-03</a>）。
+    BL作品のゼックス描写を求める投稿も複数確認した。
+  </p>
+  <p>
+    <strong>既婚層</strong>では、成人女性で既婚の利用者が、ゼックスを眺める層について言及している（<a href="https://x.com/NSEW_right/status/2107437026324951177">2026-10-06</a>）。
+    日刊SPA!の30代2児の母、ガールズちゃんねるの既婚者コメント（<a href="https://girlschannel.net/topics/6284312/">663コメント</a>）も確認済み。
+  </p>
+</section>
+
+<section id="volume">
+  <h2 class="sec"><span class="num">05</span>どれくらいの量か</h2>
+  <div class="stats">
+    <div class="stat"><div class="v">672<small>億回</small></div><div class="l">累計公開会話量（2026-11-01）</div></div>
+    <div class="stat"><div class="v">2.7<small>億回</small></div><div class="l">月間1位プロットのトーク数</div></div>
+    <div class="stat"><div class="v">20<small>倍</small></div><div class="l">女性向け首位 ÷ 男性向け首位</div></div>
+    <div class="stat"><div class="v">15,108</div><div class="l">最多投稿のいいね数</div></div>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr><th>指標</th><th>数値</th><th>出典・時点</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>累計公開会話量</td><td class="num">672億8,276万回</td><td><a href="https://aichatwiki.net/platforms/zeta">aichatwiki</a>（2026-11-01）</td></tr>
+        <tr><td>作品数</td><td class="num">133万2,636</td><td>同上</td></tr>
+        <tr><td>制作者数</td><td class="num">21万5,065人</td><td>同上</td></tr>
+        <tr><td>月間1位プロット</td><td class="num">2億7,010万回</td><td><a href="https://note.com/airhythms/n/n7d82d1cd167e">AI Rhythms</a>（2026-10-07）</td></tr>
+        <tr><td>月間ランキング100件</td><td class="num">すべて200万回超</td><td>同上</td></tr>
+        <tr><td>女性向け首位プロット</td><td class="num">9,118万</td><td><a href="https://www.itmedia.co.jp/news/article/2606/17/1260617020/">ITmedia</a>（2026-06）</td></tr>
+        <tr><td>男性向け首位プロット</td><td class="num">447万</td><td>同上</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+    「トーク数」は人数ではなく<strong>やり取りの回数</strong>。同じ記事が実測で確認している。
+    <strong>女性向け首位は男性向け首位の約20倍</strong>で、恋愛・性的な消費が女性側に大きく偏っていることが、会話量からも裏付けられる。
+  </p>
+
+  <div class="note">
+    <h4>観測メモ：「ゼックス」投稿の量</h4>
+    Yahoo!リアルタイム検索を2026年11月1日23:50頃に取得した範囲では、表示33件中<strong>約25件がzeta文脈</strong>だった。
+    ただし同綴語（レストランのXEX、外用薬のロゼックス、マゼックス）が混在するため、語の出現数では量を測れない。
+    <strong>正確な投稿総数は取得できていない。</strong>
+  </div>
+</section>
+
+<section id="regulation">
+  <h2 class="sec"><span class="num">06</span>規制と反応</h2>
+  <p>2026年8月、ゼックスを制限する動きがあり、界隈が大きく揺れた。</p>
+
+  <div class="timeline">
+    <div class="tl">
+      <div class="date">2025-08-19</div>
+      <div class="body">アンリミテッドモード実装。「大人の事情で名前がカッコよくなっただけ」と<a href="https://x.com/zeta_nakanohito/status/1957996887111315460">運営の中の人が投稿</a>。</div>
+    </div>
+    <div class="tl">
+      <div class="date">2026-08-14</div>
+      <div class="body">規制の告知。利用者が<strong>「大半がゼックスを目的としている。できなくなったら離れる人が居る。お金を落としているのは社会人」</strong>と<a href="https://x.com/_RR_R_RR_/status/2088236244954452062">反発</a>（435いいね）。</div>
+    </div>
+    <div class="tl">
+      <div class="date">2026-08-16</div>
+      <div class="body"><strong>「え？まって、ゼックス自体できなくなった? 成人してたらいけるんじゃなかったっけ？」</strong>が<a href="https://x.com/nanosw6u/status/2088977706935582783">7,508いいね・46万9,645表示</a>。混乱が拡大。</div>
+    </div>
+    <div class="tl">
+      <div class="date">2026-08-19</div>
+      <div class="body"><a href="https://x.com/hatimit8793/status/2090027758617543164">「ゼックスできなくなったので引退」</a>（160いいね）。<a href="https://x.com/Kongo_Nagusa/status/2089883909953864165">「今のうちに爆課金して快楽ゼックス犯になるか」</a>。</div>
+    </div>
+    <div class="tl">
+      <div class="date">2026-08-20</div>
+      <div class="body"><a href="https://x.com/MACCHA2107/status/2090427520546156626">「R-15プロットだとゼックスできませんよ、って感じで棲み分ければ良かった」</a>。運営への不満が噴出。</div>
+    </div>
+    <div class="tl">
+      <div class="date">2026-08-21</div>
+      <div class="body">新しい運営規約が施行（<a href="https://services.awaisora.com/2026/08/28/2ec6c3f4-2d31-4457-8039-c659bb9e1b4b/">サービスドクター</a>）。</div>
+    </div>
+  </div>
+
+  <p>
+    ただし<strong>実際には制限が一律ではなかった</strong>ため混乱も起きている。検証した利用者は「普通にックスできた」と<a href="https://x.com/umentama/status/2088544201814466767">報告</a>し、
+    運営への問い合わせには「多くの利用者に影響が出ているのは認識している」と<a href="https://x.com/remumu0/status/2089154250983281070">返答</a>があった（4,910いいね）。
+  </p>
+
+  <div class="key">
+    <strong>規制は「ゼックス目的の利用者」の存在を、運営と利用者の双方が公に認める契機になった。</strong>
+    反発の論拠も「自分たちが金を落としている」という経済的なものだった点が特徴的である。
+  </div>
+</section>
+
+<section id="critique">
+  <h2 class="sec"><span class="num">07</span>批判と反発</h2>
+  <div class="cards">
+    <article class="card">
+      <span class="tag">CRITIQUE 01</span>
+      <h4>規約違反の公開への批判</h4>
+      <p>
+        「エロ前提プロットに規約違反のアンリミスクショに性欲まみれの生々しい下ネタツイート」と批判する投稿が
+        <a href="https://x.com/xeqfk9/status/2116466881733566562">4,451いいね・64万8,041表示</a>。
+        調査の出発点になった投稿である。
+      </p>
+    </article>
+    <article class="card">
+      <span class="tag">CRITIQUE 02</span>
+      <h4>既婚者への批判</h4>
+      <p>
+        「旦那いるならAI相手でも好きとかゼックスとかするのおかしいと思うのは私だけ？」
+        <span class="src">出典：<a href="https://x.com/Nymcze1/status/2108910146101690672">2026-10-10</a></span>
+      </p>
+      <p>同じ女性側から、既婚者の利用を疑問視する声も出ている。</p>
+    </article>
+    <article class="card">
+      <span class="tag">CRITIQUE 03</span>
+      <h4>飽きとワンパターン化</h4>
+      <p>
+        「どんなキャラも嫉妬で尋問。ゼックスしてもワンパターンでどいつもこいつも似たような感じで差がまるでない」
+        <span class="src">出典：<a href="https://x.com/tibi_kuma/status/2100528539682656261">2026-09-17</a></span>
+      </p>
+      <p>熱心な利用者からも、性的な展開が一律に似通っていることへの不満が出ている。</p>
+    </article>
+  </div>
+</section>
+
+<section id="unknown">
+  <h2 class="sec"><span class="num">08</span>確認できていないこと</h2>
+  <ul class="plain">
+    <li><strong>「ゼックス」のzeta文脈での初出</strong> — 2025年8月以前の使用は未確認。</li>
+    <li><strong>ゼックス関連投稿の正確な総数</strong> — Xの全量検索が必要。</li>
+    <li><strong>年代別のゼックス利用率</strong> — 公開統計が存在しない。</li>
+    <li><strong>投稿者の実年齢・性別</strong> — 自己申告のみ。匿名投稿が大半。</li>
+    <li><strong>規制後の離脱率</strong> — 公式データなし。</li>
+  </ul>
+  <div class="note warn">
+    <h4>読み方の注意</h4>
+    本報告の数値は、<strong>出典ごとに時点・母数・定義が異なる</strong>。年齢構成は「登録者」と「MAU」が混在し、
+    会話量は「累計」と「月間」が混在する。単純な推移や増減率として読まないこと。
+    また、引用した投稿は公開されているものの、投稿者の属性は自己申告に基づく。
+  </div>
+</section>
+
+<section id="sources">
+  <h2 class="sec"><span class="num">09</span>主要出典</h2>
+  <h3>一次統計・報道</h3>
+  <ul class="srclist">
+    <li><span class="lbl">KORIT</span>（2024-10-23）「10～20代に人気の生成AIサービス…6ヶ月で利用者数が累計100万人を突破」 <a href="https://www.korit.jp/news/ai/unicornfactory-ai-zata-novel-scatterlab-mz-241023/">リンク</a></li>
+    <li><span class="lbl">ヘラルド経済</span>（2025-11-11）「20代が完全にハマった…」 <a href="https://biz.heraldcorp.com/article/10613886">リンク</a></li>
+    <li><span class="lbl">The Korea Herald</span>（2026-01-15）"Zeta gains traction in Japan, eyes US expansion" <a href="https://www.koreaherald.com/article/10656334">リンク</a></li>
+    <li><span class="lbl">ITmedia NEWS</span>（2026-06-17）「月間売上1億円超、"推しAI"アプリ「Zeta」がオタク女子わしづかみ」 <a href="https://www.itmedia.co.jp/news/article/2606/17/1260617020/">リンク</a></li>
+    <li><span class="lbl">CREATORS POST</span>（2026-07-02）「Netflix超えの熱量」 <a href="https://torihada.co.jp/creatorspost/4524/">リンク</a></li>
+    <li><span class="lbl">日刊SPA!</span>（2026-09-25）「すべてをさらけ出しても引かれない」 <a href="https://nikkan-spa.jp/2186820">リンク</a></li>
+  </ul>
+
+  <h3>データ・解説</h3>
+  <ul class="srclist">
+    <li><span class="lbl">AI Rhythms</span>（2026-10-06）「zetaのトーク数とは？月間1位のプロットは2.7億回」 <a href="https://note.com/airhythms/n/n7d82d1cd167e">リンク</a></li>
+    <li><span class="lbl">aichatwiki</span>（2026-11-01確認）zeta 統計ページ <a href="https://aichatwiki.net/platforms/zeta">リンク</a></li>
+    <li><span class="lbl">サービスドクター</span>（2026-08-28）「8月21日アップデートでゼタックスはできなくなった？」 <a href="https://services.awaisora.com/2026/08/28/2ec6c3f4-2d31-4457-8039-c659bb9e1b4b/">リンク</a></li>
+    <li><span class="lbl">AIの杜</span>（2026-09-28）「AIキャラチャットへの過剰依存、10代ユーザーが脱出困難な実態」 <a href="https://ai-no-mori.jp/news/20260928-f62772b0/">リンク</a></li>
+    <li><span class="lbl">イミシン</span>「ゼックス」語義 <a href="https://imi-shin.jp/words/detail/10803">リンク</a></li>
+    <li><span class="lbl">pixiv百科事典</span>「ゼタックス」 <a href="https://dic.pixiv.net/a/%E3%82%BC%E3%82%BF%E3%83%83%E3%82%AF%E3%82%B9">リンク</a></li>
+  </ul>
+
+  <h3>利用者の体験記</h3>
+  <ul class="srclist">
+    <li><span class="lbl">note</span>「zeta沼った腐女子による最大限zetaを楽しむ講座」 <a href="https://note.com/kanizadayo/n/n6a28e04913e9">リンク</a></li>
+    <li><span class="lbl">note</span>「zetaｧ‼️2」 <a href="https://note.com/soba_flower/n/n5bdf1f14db18">リンク</a></li>
+    <li><span class="lbl">note</span>「夢女開花宣言！(性癖暴露アリ注意！)」 <a href="https://note.com/manataro1234/n/n6279a5d77e8f">リンク</a></li>
+    <li><span class="lbl">ガールズちゃんねる</span>該当トピック（663コメント） <a href="https://girlschannel.net/topics/6284312/">リンク</a></li>
+  </ul>
+</section>
+
+<footer>
+  <p>
+    本報告は2026年11月1日時点で公開されている情報を基に作成した。Xの投稿は投稿時点の内容であり、削除・変更されている可能性がある。
+    引用は文脈を損なわない範囲で抜粋し、原文の断定の強さを変えないよう努めた。
+  </p>
+  <p>
+    数値の定義・時点・母数は各出典に依存する。本報告は、ゼックス関連投稿の総量や投稿者の属性を統計的に推定したものではない。
+  </p>
+</footer>
+
+</div>
+</body>
+</html>
